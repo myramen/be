@@ -20,11 +20,11 @@ func Load() {
 	AppConfig = Config{
 		AppPort:       getEnv("APP_PORT", "8080"),
 		AdminPassword: getEnv("ADMIN_PASSWORD", "admin1234"),
-		MySQLHost:     getEnv("MYSQL_HOST", "localhost"),
-		MySQLPort:     getEnv("MYSQL_PORT", "3306"),
-		MySQLDatabase: getEnv("MYSQL_DATABASE", "myramen"),
-		MySQLUsername: getEnv("MYSQL_USER", "root"),
-		MySQLPassword: getEnv("MYSQL_PASSWORD", "password"),
+		MySQLHost:     getEnv("DB_HOST", "localhost"),
+		MySQLPort:     getEnv("DB_PORT", "3306"),
+		MySQLDatabase: getEnv("DB_DATABASE", "myramen"),
+		MySQLUsername: getEnv("DB_USER", "root"),
+		MySQLPassword: getEnv("DB_PASSWORD", "password"),
 	}
 }
 
